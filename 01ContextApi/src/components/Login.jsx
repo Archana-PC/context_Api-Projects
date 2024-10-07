@@ -16,7 +16,7 @@ function Login() {
     }
   
     return (
-    <div>
+    <form className='flex flex-col bg-blue-500 justify-center align-center  items-center w-1/4 h-fit gap-5 rounded-lg ml-96 mt-10'>
         <h2>Login</h2>
         <input type='text'
         value={username}
@@ -27,8 +27,8 @@ function Login() {
         value={password}
         onChange={(e) => setPassword(e.target.value) }
         placeholder='password'  />
-        <button onClick={handleSubmit}>Submit</button>
-    </div>
+        <button  className="bg-blue-800 rounded-lg px-3 py-1" onClick={handleSubmit}>Submit</button>
+    </form>
   )
 }
 

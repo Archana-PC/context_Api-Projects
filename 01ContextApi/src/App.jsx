@@ -7,7 +7,7 @@ import UserContextProvider from './context/UserContextProvider';
 function App() {
   return (
     <UserContextProvider>
-    <h1>React and chai</h1>
+    <h1 className='text-xl font-bold underline '>React and chai</h1>
     <Login/>
     <Profile/>
     </UserContextProvider>
